@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+
+<body>
+    <div class="page-header">
+        <img src="wsa-logo.svg">
+        <h1 class="project-title">Image Carousel</h1>
+    </div>
+    <section class="carousel-wrapper">
+        <div class="carousel-slides-container">
+            <button class="prev-btn" onclick="changeSlide(-1)">
+                <img src="arrow-prev.svg">
+            </button>
+            <img src="slide1.png" class="carousel-slide">
+            <img src="slide2.png" class="carousel-slide">
+            <img src="slide3.png" class="carousel-slide">
+
+            <button class="next-btn" onclick="changeSlide(1)">
+                <img src="arrow-next.svg">
+            </button>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+    <footer class="copyright-text">
+        <p>&copy;2023 WSA. All Rights Reserved</p>
+    </footer>
+    <script src="slider.js"></script>
+</body>
+
+</html>
